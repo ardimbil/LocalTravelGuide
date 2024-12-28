@@ -1,0 +1,1092 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Events Page Specific Styles */
+.events-page {
+    background-color: #f5f5f5;
+}
+
+.events-page header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/ImgLDN.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Search and Filter Container */
+.search-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 1rem;
+    max-width: 1200px;
+}
+
+.search-container input,
+.search-container select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 1.5rem;
+}
+
+.event-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.event-date, 
+.event-location {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #4CAF50;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Featured Events Section */
+.featured-events {
+    padding: 4rem 2rem;
+    background: white;
+}
+
+.featured-events h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.featured-card h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: #333;
+}
+
+.featured-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
+/* Event Tips Section */
+.event-tips {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: #4CAF50;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 0.8rem 2rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    margin: 50px auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .events-grid {
+        padding: 1rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        margin: 20px;
+        padding: 1rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .event-card,
+    .featured-card {
+        transition: none;
+    }
+}
+
+/* Home Page Specific Styles */
+.home-page {
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/ImgLDN.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Featured Grid */
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.feature-card p {
+    padding: 0 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-link {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.feature-link:hover {
+    background-color: #45a049;
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+    padding: 60px 20px;
+    margin: 40px 0;
+}
+
+.about-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.about-section ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #4CAF50;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #222;
+}
+
+/* Footer Styles */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-section h3 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #4CAF50;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #888;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .feature-card {
+        transition: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .feature-link {
+        border: 2px solid black;
+    }
+
+    .newsletter {
+        border: 2px solid black;
+    }
+}
+
+/* Focus States */
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+/* Parks Page Specific Styles */
+.parks-page {
+    background-color: #f5f5f5;
+}
+
+.parks-page header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/imageoflondonparkfornavbar.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Search and Filter Container */
+.search-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-container input,
+.search-container select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Parks Grid */
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.park-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.park-card:hover {
+    transform: translateY(-5px);
+}
+
+.park-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.park-info {
+    padding: 20px;
+}
+
+.park-info h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.park-features {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.feature-tag {
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* Weather Widget */
+.weather-widget {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Park Tips Section */
+.park-tips {
+    background: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .parks-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .modal-content {
+        margin: 20px;
+        max-height: 95vh;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .park-card {
+        transition: none;
+    }
+}
+
+/* Restaurant Page Specific Styles */
+.restaurants-page {
+    background-color: #f5f5f5;
+}
+
+.restaurants-page header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/imageforrestaurantsbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Restaurants Grid */
+.restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    padding: 20px;
+}
+
+.restaurant-info h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.cuisine-tag {
+    background: #FF5722;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: #666;
+}
+
+/* Cuisine Highlights Section */
+.cuisine-highlights {
+    padding: 40px 20px;
+    background: white;
+    margin: 40px 0;
+}
+
+.cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cuisine-card {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cuisine-card:hover {
+    transform: translateY(-5px);
+}
+
+.cuisine-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Dining Tips Section */
+.dining-tips {
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restaurants-grid,
+    .cuisine-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .price-rating {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Contact Page Specific Styles */
+.contact-page {
+    background-color: #f5f5f5;
+}
+
+.contact-page header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/ImgLDN.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Contact Information Section */
+.contact-info {
+    padding: 40px 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card i {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+}
+
+.submit-button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #45a049;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Map Section */
+.map-section {
+    padding: 40px 20px;
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+}
+
+/* Map iframe Styles */
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 0 15px;
+    }
+
+    .map-container {
+        margin: 1rem;
+        padding-bottom: 75%; /* Taller aspect ratio for mobile */
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .info-card {
+        transition: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .submit-button {
+        border: 2px solid black;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        border: 2px solid black;
+    }
+}

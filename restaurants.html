@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Restaurants Guide - Local Travel Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="restaurants-page">
+    <header>
+        <h1>London's Best Restaurants</h1>
+        <p class="subtitle">Discover Culinary Delights in the City</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parks.html">Parks</a></li>
+            <li><a href="restaurants.html" class="active">Restaurants</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Search and Filter Section -->
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="restaurantSearch" 
+                placeholder="Search restaurants..."
+                aria-label="Search restaurants">
+            <select id="filterCuisine" aria-label="Filter by cuisine">
+                <option value="">All Cuisines</option>
+                <option value="British">British</option>
+                <option value="Italian">Italian</option>
+                <option value="Indian">Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+            </select>
+            <select id="filterPrice" aria-label="Filter by price range">
+                <option value="">All Prices</option>
+                <option value="budget">Budget</option>
+                <option value="moderate">Moderate</option>
+                <option value="expensive">Expensive</option>
+            </select>
+            <select id="filterRating" aria-label="Filter by rating">
+                <option value="">All Ratings</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4+ Stars</option>
+                <option value="3">3+ Stars</option>
+            </select>
+        </div>
+
+        <!-- Restaurants Grid Container -->
+        <div class="restaurants-grid" id="restaurantsContainer">
+            <!-- Restaurants will be dynamically inserted here -->
+        </div>
+
+        <!-- Restaurant Details Modal -->
+        <div id="restaurantModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+
+        <!-- Popular Cuisines Section -->
+        <section class="cuisine-highlights">
+            <h2>Popular Cuisines in London</h2>
+            <div class="cuisine-grid">
+                <div class="cuisine-card">
+                    <img src="Images/imageofbritishcuisine.jpg" alt="British Cuisine" class="cuisine-image">
+                    <h3>British</h3>
+                    <p>Traditional pub fare and modern British gastronomy</p>
+                </div>
+                <div class="cuisine-card">
+                    <img src="Images/imageofindiancuisine.jpg" alt="Indian Cuisine" class="cuisine-image">
+                    <h3>Indian</h3>
+                    <p>Authentic curries and modern fusion dishes</p>
+                </div>
+                <div class="cuisine-card">
+                    <img src="Images/imageofitaliancuisine.jpg" alt="Italian Cuisine" class="cuisine-image">
+                    <h3>Italian</h3>
+                    <p>Fresh pasta and wood-fired pizzas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dining Tips Section -->
+        <section class="dining-tips">
+            <h2>Dining Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>Reservations</h3>
+                    <p>Book in advance for popular restaurants, especially for weekend dining.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Service Charge</h3>
+                    <p>A 12.5% service charge is often added to bills in London restaurants.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Peak Hours</h3>
+                    <p>Lunch: 12-2pm, Dinner: 7-9pm. Book outside these times for quieter dining.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="parks.html">Parks</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Restaurant Resources</h3>
+                <ul>
+                    <li><a href="#">Make a Reservation</a></li>
+                    <li><a href="#">Dietary Information</a></li>
+                    <li><a href="#">Food Safety</a></li>
+                    <li><a href="#">Reviews Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: restaurants@localtravelguide.com</p>
+                <p>Phone: +44 20 1234 5678</p>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Local Travel Guide</p>
+    </footer>
+
+    <script src="restaurants.js"></script>
+</body>
+</html>
